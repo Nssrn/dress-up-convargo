@@ -2,8 +2,100 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Convargo</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+
+
   </head>
   <body>
+    <section class="container-fluid banner">
+      <div class="intro"> 
+          <h1>Convargo</h1>
+          <p>Introduction du site</p>
+      </div>
+    </section>
+
+    <section class="container-fluid contenu">
+      <section class="container">
+          <div class="row">
+            <div id="trucker">
+              <article class="col-md-6">
+                <h1>Trucker</h1>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="name form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                      </div>
+                      <input type="number" class="price-by-km form-control" placeholder="Price by Km" aria-label="Price by Km" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">$</span>
+                        </div>
+                        <input type="number" class="price-by-cubic form-control" placeholder="Price by m3" aria-label="Price by m3" aria-describedby="basic-addon1">
+                      </div>
+              </article>
+            </div>
+            <div id="shipper">
+              <article class="col-md-6">
+                  <h1>Shipper</h1>
+            
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                      </div>
+                      <input type="text" class="name form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Km</span>
+                        </div>
+                        <input type="number" class="distance form-control" placeholder="Distance" aria-label="Distance" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">m3</span>
+                          </div>
+                          <input type="number" class="volume form-control" placeholder="Volume" aria-label="Volume" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="option form-check-input" id="optioncheck">
+                            <label class="option form-check-label" for="optioncheck">Deductible option</label>
+                          </div>
+
+                          <button  id="compute" class="btn btn-secondary">Compute</button>
+              </article>  
+            </div>
+            </div>
+      </section>
+    </section>
+
+    <section class="container result">
+        <div id="actors"></div>
+    </section>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<!--
     <div id="trucker">
       <input class="name" type="text" placeholder="Trucker name"/>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
@@ -17,7 +109,20 @@
     </div>
     <button id="compute">Compute</button>
     <div id="actors"></div>
+
+
+
+  -->
+
+
+
     <script src="convargo.js"></script>
     <script src="index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
   </body>
 </html>

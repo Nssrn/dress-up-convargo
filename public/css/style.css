@@ -1,0 +1,29 @@
+
+.banner
+{
+    background-color: rgb(92, 47, 84);
+    
+
+}
+
+.contenu{
+    height: 100%;
+    
+}
+.intro{
+    text-align: center;
+    color: darkgrey;
+   
+}
+
+article{
+    
+    text-align: center;
+}
+
+.result
+{
+    
+    color : rgb(92, 47, 84);
+   
+}
