@@ -6,84 +6,79 @@
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    
-
-
   </head>
-  <body>
-    <section class="container-fluid banner">
-      <div class="intro"> 
-          <h1>Convargo</h1>
-          <p>Revolution of the freight industry, by connecting shippers with truckers in real time via a web application.<br>
-            With Convargo, ship your goods quickly, simply and cheaply !</p>
-      </div>
-    </section>
 
-    <section class="container-fluid contenu">
-      <section class="container">
-          <div class="row">
-            <p>Make as 1500 French senders who ship on Convargo and fill in the characteristics of your goods</p>
-              <article id= "trucker" class="col-md-6">
-                <h2>Trucker Properties</h2>
+  <body>
+
+      <header>
+          <div class="centercolumn">
+              <h1>Convargo</h1>
+              <p>Revolution of the freight industry, by connecting shippers with truckers in real time via a web application.<br>
+                With Convargo, ship your goods quickly, simply and cheaply !</p>
+                  </div><!-- .centercolumn -->
+        </header>
+
+
+          <fieldset id= "trucker" class="col-md-6">
+            <legend>Trucker Properties</legend>
+            <p>Please complete the following informations : </p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="name form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">$</span>
+                  </div>
+                  <input type="number" class="price-by-km form-control" placeholder="Price by Km" aria-label="Price by Km" aria-describedby="basic-addon1">
+                </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <span class="input-group-text" id="basic-addon1">$</span>
                     </div>
-                    <input type="text" class="name form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                    <input type="number" class="price-by-cubic form-control" placeholder="Price by m3" aria-label="Price by m3" aria-describedby="basic-addon1">
+                  </div>
+          </fieldset>
+          <fieldset id ="shipper" class="col-md-6">
+              <legend>Shipper Properties</legend>
+              <p>Please complete the following informations : </p>
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                  <input type="text" class="name form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Km</span>
+                    </div>
+                    <input type="number" class="distance form-control" placeholder="Distance" aria-label="Distance" aria-describedby="basic-addon1">
                   </div>
                   <div class="input-group mb-3">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">$</span>
+                        <span class="input-group-text" id="basic-addon1">m3</span>
                       </div>
-                      <input type="number" class="price-by-km form-control" placeholder="Price by Km" aria-label="Price by Km" aria-describedby="basic-addon1">
+                      <input type="number" class="volume form-control" placeholder="Volume" aria-label="Volume" aria-describedby="basic-addon1">
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">$</span>
-                        </div>
-                        <input type="number" class="price-by-cubic form-control" placeholder="Price by m3" aria-label="Price by m3" aria-describedby="basic-addon1">
+                    <div class="form-check">
+                        <input type="checkbox" class="option form-check-input" id="optioncheck">
+                        <label class="option form-check-label" for="optioncheck">Deductible option</label>
                       </div>
-              </article>
-           
-            
-              <article id ="shipper" class="col-md-6">
-                  <h2>Shipper Properties</h2>
-            
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                      </div>
-                      <input type="text" class="name form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">Km</span>
-                        </div>
-                        <input type="number" class="distance form-control" placeholder="Distance" aria-label="Distance" aria-describedby="basic-addon1">
-                      </div>
-                      <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">m3</span>
-                          </div>
-                          <input type="number" class="volume form-control" placeholder="Volume" aria-label="Volume" aria-describedby="basic-addon1">
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="option form-check-input" id="optioncheck">
-                            <label class="option form-check-label" for="optioncheck">Deductible option</label>
-                          </div>
+          </fieldset>
+        </form>
 
-                         
-              </article>  
-              <button  id="compute" class="btn btn-secondary">Compute</button>
-            </div>
-           
-      </section>
-    </section>
+    <p>
+        <button  id="compute" class="btn btn-secondary">Compute</button>
+        
+    </p>
+              
 
-    <section class="container result">
-        <div id="actors"></div>
-    </section>
+        <div id="actors" class ="result"> </div>
+  
+
+   
 
 
     
